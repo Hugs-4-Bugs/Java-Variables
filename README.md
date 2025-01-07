@@ -12,7 +12,7 @@ A variable in Java can be thought of as a box that stores data values during the
 
 
 <div align="right">
-  <img src="https://github.com/user-attachments/assets/5389bad7-da88-4c04-be07-2a5388395f27" alt="Image" width="700"/>
+  <img src="![image](https://github.com/user-attachments/assets/dccc5c99-fa25-49d3-a0d2-0d30b2ce5b79)" alt="Image" width="600"/>
 </div>
 
 
