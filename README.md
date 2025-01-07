@@ -171,164 +171,156 @@ Development average salary: 1000
 ## Frequently Asked Questions
 
 
-<details>  
-<summary>**Q1. What are Java variables?**</summary>  
-**Ans:** Java variables are containers that hold data values. They are used to store and manipulate data within a Java program.  
+**Q1. What are Java variables?**  
+> Java variables are containers that hold data values. They are used to store and manipulate data within a Java program.  
+Example:
 ```java
-int number = 10;  // 'number' is a variable storing an integer value 10
-String name = "John";  // 'name' is a variable storing a string
-```  
-</details>  
+int age = 25; // 'age' is a variable holding the value 25
+```
 
-<details>  
-<summary>**Q2. How do you declare a variable in Java?**</summary>  
-**Ans:** Variables in Java are declared by specifying the data type followed by the variable name.  
+**Q2. How do you declare a variable in Java?**  
+> Variables in Java are declared by specifying the data type followed by the variable name. For Example: `int age; // Declaration`  
+Example:
 ```java
-int age;  // Declaration
-double price;  // Declaration of double type
-```  
-</details>  
+int age;  // Declaration of the variable 'age'
+age = 25; // Assignment
+```
 
-<details>  
-<summary>**Q3. What are the different types of variables in Java?**</summary>  
-**Ans:** Java variables can be classified into three main types:  
-1. **Local variables:** Declared within a method, constructor, or block.  
-2. **Instance variables:** Associated with objects (instances) of a class.  
-3. **Static variables:** Associated with the class rather than any object.  
+**Q3. What are the different types of variables in Java?**  
+> Java variables can be classified into three main types:  
+> 1. Local variables: Declared within a method, constructor, or block.  
+> 2. Instance variables: Associated with objects (instances) of a class.  
+> 3. Static variables: Associated with the class itself.  
+Example:
+```java
+public class Example {
+    int instanceVar; // Instance variable
+    static int staticVar; // Static variable
+
+    public void method() {
+        int localVar = 5; // Local variable
+    }
+}
+```
+
+**Q4. What is the scope of a variable in Java?**  
+> In Java, the scope of a variable determines where programmers can access it in the code. Local variables confine their scope within the block of code where developers declare them, whereas instance and static variables offer broader scopes.  
+Example:
+```java
+public class Example {
+    int instanceVar; // Accessible throughout the class
+    static int staticVar; // Accessible throughout the class
+
+    public void method() {
+        int localVar = 5; // Only accessible within 'method'
+        System.out.println(localVar); // OK
+    }
+}
+```
+
+**Q5. Can variable names start with a digit in Java?**  
+> No, variable names in Java cannot start with a digit. They must begin with a letter (A-Z, a-z), dollar sign ($), or underscore (_). After the first character, variable names can contain digits (0-9).  
+Example:
+```java
+int validVar = 5; // Valid
+int 1invalidVar = 10; // Invalid (starts with a digit)
+```
+
+**Q6. Can Java variables be redeclared within the same scope?**  
+> No, Java does not allow redeclaration of variables within the same scope. Each variable name must be unique within its scope.  
+Example:
+```java
+int age = 30;
+int age = 35; // Error: 'age' is already declared
+```
+
+**Q7. What is the difference between instance and static variables?**  
+> Instance variables associate with objects (instances) of a class, creating separate copies for each instance. On the other hand, static variables associate with the class itself, maintaining only one shared copy among all instances of the class.  
+Example:
 ```java
 class Example {
-    int instanceVar = 5;  // Instance variable
-    static int staticVar = 10;  // Static variable
-    
-    void method() {
-        int localVar = 20;  // Local variable
+    int instanceVar; // Instance variable
+    static int staticVar; // Static variable
+
+    public Example(int value) {
+        instanceVar = value;
     }
 }
-```  
-</details>  
+```
 
-<details>  
-<summary>**Q4. What is the scope of a variable in Java?**</summary>  
-**Ans:** In Java, the scope of a variable determines where programmers can access it in the code. Local variables confine their scope within the block of code where developers declare them, whereas instance and static variables offer broader scopes.  
+**Q8. Can final variables be modified in Java?**  
+> In Java, you cannot modify final variables once you initialize them. They function as constants, and their values remain unchanged after initialization.  
+Example:
 ```java
-class ScopeExample {
-    int x = 10;  // Instance variable (accessible across the class)
-    
-    void print() {
-        int y = 5;  // Local variable (accessible only within this method)
-        System.out.println(x + y);
+final int maxLimit = 100;
+maxLimit = 200; // Error: Cannot assign a value to final variable 'maxLimit'
+```
+
+**Q9. What are the naming conventions for Java variables?**  
+> Variable names in Java should follow certain naming conventions for readability and consistency. It is recommended to use meaningful names that describe the purpose of the variable, with the first letter lowercase and subsequent words capitalized (camelCase).  
+Example:
+```java
+int totalAmount = 50; // Camel case for variable name
+```
+
+**Q10. Do Java variables have default values?**  
+> Yes, Java variables have default values if not explicitly initialized. The default value depends on the variable’s data type. For example, numeric types have a default value of 0, false for boolean, and null for reference types.  
+Example:
+```java
+int number; // Default value is 0
+boolean isValid; // Default value is false
+String name; // Default value is null
+```
+
+**Q11. What is the difference between instance variable and class variable?**  
+> Instance variables hold unique data for each object, while class variables share a single value across all objects.  
+Example:
+```java
+class Example {
+    int instanceVar; // Instance variable
+    static int classVar; // Class variable
+
+    public Example(int value) {
+        instanceVar = value;
     }
 }
-```  
-</details>  
+```
 
-<details>  
-<summary>**Q5. Can variable names start with a digit in Java?**</summary>  
-**Ans:** No, variable names in Java cannot start with a digit. They must begin with a letter (A-Z, a-z), dollar sign (`$`), or underscore (`_`). After the first character, variable names can contain digits (0-9).  
+**Q12. Where are instance variables stored in Java?**  
+> Instance variables in Java are stored in the heap memory, which is allocated to each individual object created from a class. Each object has its own copy of instance variables.  
+Example:
 ```java
-int _value = 30;  // Valid
-int $price = 100;  // Valid
-int 1number = 10;  // Invalid (Cannot start with digit)
-```  
-</details>  
-
-<details>  
-<summary>**Q6. Can Java variables be redeclared within the same scope?**</summary>  
-**Ans:** No, Java does not allow redeclaration of variables within the same scope. Each variable name must be unique within its scope.  
-```java
-int x = 10;
-// int x = 20;  // Compilation error (redeclaration in same scope)
-```  
-</details>  
-
-<details>  
-<summary>**Q7. What is the difference between instance and static variables?**</summary>  
-**Ans:** Instance variables associate with objects (instances) of a class, creating separate copies for each instance. On the other hand, static variables associate with the class itself, maintaining only one shared copy among all instances of the class.  
-```java
-class Counter {
-    int count = 0;  // Instance variable
-    static int total = 0;  // Static variable
+class Example {
+    int instanceVar; // Stored in heap memory when the object is created
 }
-```  
-</details>  
+Example obj = new Example();
+obj.instanceVar = 5; // Each object has its own instanceVar
+```
 
-<details>  
-<summary>**Q8. Can final variables be modified in Java?**</summary>  
-**Ans:** In Java, you cannot modify final variables once you initialize them. They function as constants, and their values remain unchanged after initialization.  
+**Q13. Can instance variables be declared as static?**  
+> No, instance variables cannot be declared as static. Static variables belong to the class, not to specific instances. However, instance variables are specific to each object, while static variables are shared across all instances of the class.  
+Example:
 ```java
-final int MAX = 100;
-// MAX = 200;  // Compilation error (Cannot modify final variable)
-```  
-</details>  
-
-<details>  
-<summary>**Q9. What are the naming conventions for Java variables?**</summary>  
-**Ans:** Variable names in Java should follow certain naming conventions for readability and consistency. It is recommended to use meaningful names that describe the purpose of the variable, with the first letter lowercase and subsequent words capitalized (camelCase).  
-```java
-int totalAmount = 500;  // camelCase naming convention
-String userName = "Alice";
-```  
-</details>  
-
-<details>  
-<summary>**Q10. Do Java variables have default values?**</summary>  
-**Ans:** Yes, Java variables have default values if not explicitly initialized. The default value depends on the variable’s data type.  
-```java
-class DefaultValues {
-    int num;  // Default value is 0
-    boolean flag;  // Default value is false
-    String text;  // Default value is null
+class Example {
+    static int staticVar; // Static variable
+    int instanceVar; // Instance variable
 }
-```  
-</details>  
+```
 
-<details>  
-<summary>**Q11. What is the difference between instance variable and class variable?**</summary>  
-**Ans:** Instance variables hold unique data for each object, while class variables share a single value across all objects.  
+**Q14. When are instance variables created and destroyed?**  
+> Instance variables are created when an object is instantiated (in the constructor). They are destroyed when the object is eligible for garbage collection, i.e., when there are no more references to the object.  
+Example:
 ```java
-class Data {
-    int instanceVar = 5;
-    static int classVar = 10;
-}
-```  
-</details>  
+class Example {
+    int instanceVar; // Instance variable created when object is created
 
-<details>  
-<summary>**Q12. Where are instance variables stored in Java?**</summary>  
-**Ans:** Instance variables in Java are stored in the heap memory, which is allocated to each individual object created from a class.  
-```java
-class Memory {
-    int data = 20;
-}
-```  
-</details>  
-
-<details>  
-<summary>**Q13. Can instance variables be declared as static?**</summary>  
-**Ans:** No, instance variables cannot be declared as static. Static variables belong to the class, not to specific instances.  
-```java
-class Test {
-    int instanceVar = 50;
-    static int staticVar = 100;
-}
-```  
-</details>  
-
-<details>  
-<summary>**Q14. When are instance variables created and destroyed?**</summary>  
-**Ans:** Instance variables are created when an object is instantiated (in the constructor). They are destroyed when the object is eligible for garbage collection.  
-```java
-public class Employee {
-    private static double salary;  // Static variable
-    public static final String DEPARTMENT = "Development"; // Constant
-    
-    public static void main(String[] args) {
-        salary = 1000;
-        System.out.println(DEPARTMENT + " average salary: " + salary);
+    public Example() {
+        instanceVar = 10; // Initialization
     }
 }
-```  
-</details>  
+
+Example obj = new Example(); // instanceVar is created
+obj = null; // instanceVar is destroyed when obj is garbage collected
 ```
 
 ---
