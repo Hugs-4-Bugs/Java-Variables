@@ -8,12 +8,9 @@ A variable in Java can be thought of as a box that stores data values during the
 
 1. **Local Variable**  
 2. **Instance Variable**  
-   <p align="right">
-     <img src="https://github.com/user-attachments/assets/5389bad7-da88-4c04-be07-2a5388395f27" alt="Image">
-   </p>
 3. **Class/Static Variable**
 
-
+<img src="https://github.com/user-attachments/assets/5389bad7-da88-4c04-be07-2a5388395f27" alt="Image" align="right" width="300"/>
 
 
 ---
