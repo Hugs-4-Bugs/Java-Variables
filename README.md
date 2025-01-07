@@ -10,7 +10,10 @@ A variable in Java can be thought of as a box that stores data values during the
 2. **Instance Variable**  
 3. **Class/Static Variable**
 
-   ![image](https://github.com/user-attachments/assets/5389bad7-da88-4c04-be07-2a5388395f27)
+<p align="right">
+  <img src="https://github.com/user-attachments/assets/5389bad7-da88-4c04-be07-2a5388395f27" alt="Image">
+</p>
+
 
 
 ---
