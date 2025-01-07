@@ -13,6 +13,11 @@ A variable in Java can be thought of as a box that stores data values during the
 <img src="https://github.com/user-attachments/assets/5389bad7-da88-4c04-be07-2a5388395f27" alt="Image" align="right" width="300"/>
 
 
+
+
+
+
+
 ---
 
 ## Variable Declaration and Initialization
