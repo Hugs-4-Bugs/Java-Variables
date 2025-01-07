@@ -6,9 +6,9 @@ A variable in Java can be thought of as a box that stores data values during the
 
 ## Types of Variables
 
-1. <span style="font-size: 24px; font-weight: bold;">**Local Variable**</span>  
-2. <span style="font-size: 24px; font-weight: bold;">**Instance Variable**</span>  
-3. <span style="font-size: 24px; font-weight: bold;">**Class/Static Variable**</span>  
+1. <span style="font-size: 30px; font-weight: bold;">**Local Variable**</span>  
+2. <span style="font-size: 30px; font-weight: bold;">**Instance Variable**</span>  
+3. <span style="font-size: 30px; font-weight: bold;">**Class/Static Variable**</span>  
 
 
 <div align="right" style="margin-left: 190px;">
