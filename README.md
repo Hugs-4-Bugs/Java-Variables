@@ -8,16 +8,14 @@ A variable in Java can be thought of as a box that stores data values during the
 
 <table>
   <tr>
-    
-    <td style="font-size: 18px;">
-      1. **Local Variable**<br>
-      2. **Instance Variable**<br>
-      3. **Class/Static Variable**  
+    <td>
+      <span style="font-size: 20px; font-weight: bold;">1. Local Variable</span><br>
+      <span style="font-size: 20px; font-weight: bold;">2. Instance Variable</span><br>
+      <span style="font-size: 20px; font-weight: bold;">3. Class/Static Variable</span>
     </td>
     <td align="right">
       <img src="https://github.com/user-attachments/assets/5389bad7-da88-4c04-be07-2a5388395f27" alt="Image" width="300"/>
     </td>
-    
   </tr>
 </table>
 
