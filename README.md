@@ -11,7 +11,7 @@ A variable in Java can be thought of as a box that stores data values during the
 3. <span style="font-size: 24px; font-weight: bold;">**Class/Static Variable**</span>  
 
 
-<div align="right" style="margin-right: 30px;">
+<div align="right" style="margin-right: 90px;">
   <img src="https://github.com/user-attachments/assets/19ee7aa9-77b0-4222-9486-8d0e251a1329" alt="Image" width="500"/>
 </div>
 
