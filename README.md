@@ -9,8 +9,8 @@ A variable in Java can be thought of as a box that stores data values during the
 <table>
   <tr>
     <td>
-      1. **Local Variable**  
-      2. **Instance Variable**  
+      1. **Local Variable**<br>
+      2. **Instance Variable**<br>
       3. **Class/Static Variable**  
     </td>
     <td align="right">
@@ -18,6 +18,7 @@ A variable in Java can be thought of as a box that stores data values during the
     </td>
   </tr>
 </table>
+
 
 
 
