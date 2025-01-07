@@ -6,18 +6,13 @@ A variable in Java can be thought of as a box that stores data values during the
 
 ## Types of Variables
 
-<table>
-  <tr>
-    <td style="font-size: 20px; font-weight: bold;">
-      1. **Local Variable**<br>
-      2. **Instance Variable**<br>
-      3. **Class/Static Variable**
-    </td>
-    <td align="right">
-      <img src="https://github.com/user-attachments/assets/5389bad7-da88-4c04-be07-2a5388395f27" alt="Image" width="300"/>
-    </td>
-  </tr>
-</table>
+1. **Local Variable**  
+2. **Instance Variable**  
+3. **Class/Static Variable**  
+
+<div align="right">
+  <img src="https://github.com/user-attachments/assets/5389bad7-da88-4c04-be07-2a5388395f27" alt="Image" width="300"/>
+</div>
 
 
 
