@@ -318,14 +318,18 @@ class Test {
 <summary>**Q14. When are instance variables created and destroyed?**</summary>  
 **Ans:** Instance variables are created when an object is instantiated (in the constructor). They are destroyed when the object is eligible for garbage collection.  
 ```java
-class Demo {
-    int value;  // Created when object is created
+public class Employee {
+    private static double salary;  // Static variable
+    public static final String DEPARTMENT = "Development"; // Constant
+    
+    public static void main(String[] args) {
+        salary = 1000;
+        System.out.println(DEPARTMENT + " average salary: " + salary);
+    }
 }
-Demo d = new Demo();  // Instance variable 'value' is created
 ```  
 </details>  
-```  
-
+```
 
 ---
 
